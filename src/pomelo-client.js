@@ -429,7 +429,7 @@
 
     //Init compress dict
     if (this.dict) {
-      this.dict = dict;
+      //this.dict = dict;
       this.abbrs = {};
 
       for (var route in this.dict) {

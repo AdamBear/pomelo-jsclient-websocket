@@ -5461,8 +5461,8 @@ return Q;
     this.reconncetTimer = null;
     this.reconnectUrl = null;
     this.reconnectAttempts = 0;
-    this.reconnectionDelay = 5000;
-    this.DEFAULT_MAX_RECONNECT_ATTEMPTS = 10;
+    this.reconnectionDelay = 1000;
+    this.DEFAULT_MAX_RECONNECT_ATTEMPTS = 12;
 
     this.useCrypto;
 
@@ -5632,7 +5632,7 @@ return Q;
 
   pomeloClient.prototype.reset = function () {
     this.reconnect = false;
-    this.reconnectionDelay = 1000 * 5;
+    this.reconnectionDelay = 1000;
     this.reconnectAttempts = 0;
     clearTimeout(this.reconncetTimer);
   };
